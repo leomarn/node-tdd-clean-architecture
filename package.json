@@ -8,6 +8,11 @@
     "test:staged": "jest --bail --findRelatedTests",
     "prepare": "husky install"
   },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx}": [
+      "npm run test:staged"
+    ]
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
