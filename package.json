@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --watch",
-    "test:staged": "jest --bail --findRelatedTests",
+    "test": "jest --passWithNoTests",
+    "test:staged": "npm test -- --findRelatedTests",
     "prepare": "husky install"
   },
   "lint-staged": {
