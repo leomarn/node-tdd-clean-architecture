@@ -1,7 +1,7 @@
 # node-tdd-clean-architecture
 
-Repositório com base no curso de: NodeJs, Typescript, TDD, DDD, Clean Architecture e SOLID. Do instrudor Rodrigo Manguinho.
-[^1]Udemy: https://www.udemy.com/course/tdd-com-mango/
+Repositório com base no curso de: NodeJs, Typescript, TDD, DDD, Clean Architecture e SOLID. Do instrudor Rodrigo Manguinho.</br>
+Udemy: https://www.udemy.com/course/tdd-com-mango/
 
 - Usar TDD da forma correta
 - Usar o Clean Architecture em uma API feita em NodeJs
