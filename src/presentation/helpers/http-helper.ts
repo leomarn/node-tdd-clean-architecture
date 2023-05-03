@@ -1,20 +1,17 @@
+import type { AccountModel } from '../../domain/models/account'
 import { ServerError } from '../errors/server-error'
 import type { HttpResponse } from '../protocols/http'
 const badRequest = (error: Error): HttpResponse => ({
   statusCode: 400,
   body: error
 })
-const successRequest = (msg: string): HttpResponse => ({
+const successRequest = (account: AccountModel): HttpResponse => ({
   statusCode: 200,
-  body: msg
+  body: account
 })
 const serverError = (): HttpResponse => ({
   statusCode: 500,
   body: new ServerError()
 })
 
-export {
-  badRequest,
-  successRequest,
-  serverError
-}
+export { badRequest, successRequest, serverError }
