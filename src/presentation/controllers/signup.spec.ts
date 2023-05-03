@@ -104,7 +104,6 @@ describe('signup controller', () => {
       new InvalidParamError('passwordConfirmation')
     )
   })
-
   it('should return 400 if an invalid email is provider', () => {
     const { sut, emailValidatorStub } = makeSut()
     jest.spyOn(emailValidatorStub, 'isValid').mockReturnValueOnce(false)
