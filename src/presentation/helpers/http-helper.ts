@@ -1,5 +1,5 @@
 import type { AccountModel } from '../../domain/models/account'
-import { ServerError } from '../errors/server-error'
+import { ServerError } from '../errors'
 import type { HttpResponse } from '../protocols/http'
 const badRequest = (error: Error): HttpResponse => ({
   statusCode: 400,
