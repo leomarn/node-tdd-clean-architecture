@@ -16,3 +16,6 @@ Udemy: https://www.udemy.com/course/tdd-com-mango/
 - Usar Middleware com permissão de acesso
 - Usar recursos avançados do Typescript como Utility Types, Interface, TypeAlias, Modularização de Paths
 - Gerar documentação de API com Swagger
+
+
+Nesse projeto também estou incluindo alguns aprendizados pessoais, o projeto em sí não segue a risca o código do repositório do instrutor
