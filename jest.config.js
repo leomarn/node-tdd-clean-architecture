@@ -5,5 +5,10 @@ module.exports = {
   testEnvironment: 'node',
   transform: {
     '.+\\.ts$': 'ts-jest'
-  }
+  },
+  moduleFileExtensions: [
+    'js',
+    'json',
+    'ts'
+  ]
 }
