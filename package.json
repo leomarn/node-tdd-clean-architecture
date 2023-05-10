@@ -17,7 +17,8 @@
   "husky": {
     "hooks": {
       "commit-msg": "sh .husky/commit-msg",
-      "pre-commit": "sh .husky/pre-commit"
+      "pre-commit": "sh .husky/pre-commit",
+      "pre-push": "sh .husky/pre-push"
     }
   },
   "lint-staged": {
