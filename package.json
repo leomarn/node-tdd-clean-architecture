@@ -18,7 +18,7 @@
     "hooks": {
       "commit-msg": "sh .husky/commit-msg",
       "pre-commit": "sh .husky/pre-commit",
-      "pre-push": "sh .husky/pre-push"
+      "pre-push": "git diff HEAD --quiet && yarn test:ci && yarn lint"
     }
   },
   "lint-staged": {
