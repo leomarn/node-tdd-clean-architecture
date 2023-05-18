@@ -6,6 +6,7 @@ module.exports = {
   transform: {
     '.+\\.ts$': 'ts-jest'
   },
+  preset: '@shelf/jest-mongodb',
   moduleFileExtensions: [
     'js',
     'json',

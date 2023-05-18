@@ -40,8 +40,10 @@
     "@commitlint/cli": "^17.6.3",
     "@commitlint/config-conventional": "^17.6.3",
     "@digitalroute/cz-conventional-changelog-for-jira": "^8.0.1",
+    "@shelf/jest-mongodb": "^4.1.7",
     "@types/bcrypt": "^5.0.0",
     "@types/jest": "^29.5.0",
+    "@types/mongodb": "^4.0.7",
     "@types/node": "^18.15.11",
     "@types/validator": "^13.7.16",
     "@typescript-eslint/eslint-plugin": "^5.58.0",
@@ -62,6 +64,7 @@
   },
   "dependencies": {
     "bcrypt": "^5.1.0",
+    "mongodb": "^5.5.0",
     "validator": "^13.9.0"
   }
 }
