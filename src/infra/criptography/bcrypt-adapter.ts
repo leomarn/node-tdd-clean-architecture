@@ -1,7 +1,7 @@
 import bcrypt from 'bcrypt'
 import type { Encrypter } from '../../data/protocols/encypter'
 export class BcryptAdapter implements Encrypter {
-  private readonly salt
+  private readonly salt: number
   constructor(salt: number) {
     this.salt = salt
   }
