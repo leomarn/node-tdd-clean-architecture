@@ -1,21 +1,13 @@
-/* eslint-disable spaced-comment */
-import { MongoClient } from 'mongodb'
+import { MongoHelper } from '../helpes/mongo'
 import { AccountMongoRepository } from './account'
 
 describe('Account Mongo Repository', () => {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  let client: MongoClient
   beforeAll(async () => {
-  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-  //@ts-expect-error
-    client = await MongoClient.connect(process.env.MONGO_URL, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true
-    })
+    await MongoHelper.connect(process.env.MONGO_UR as unknown as string)
   })
 
   afterAll(async () => {
-    await client.close()
+    await MongoHelper.disconnect()
   })
 
   it('should return an account on success', async () => {
