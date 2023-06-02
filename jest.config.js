@@ -11,5 +11,8 @@ module.exports = {
     'js',
     'json',
     'ts'
+  ],
+  coveragePathIgnorePatterns: [
+    '<rootDir>/src/main/server.ts'
   ]
 }
